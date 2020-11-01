@@ -1,13 +1,16 @@
-module.exports = {
+const withLess = require('@zeit/next-less');
+const withPlugins = require('next-compose-plugins');
+
+const plugins = [
+  withLess({
     basePath: '',
-    assetPrefix: ''
-    // exportPathMap: async function (
-    //   defaultPathMap,
-    //   { dev, dir, outDir, distDir, buildId }
-    // ) {
-    //   return {
-    //     '/': { page: '/' },
-    //     '/api/hello': { page: '/pages/api/hello' },
-    //   }
-    // },
-  }
+    assetPrefix: '',
+    cssModules: false,
+  }),
+];
+
+const nextConfig = {
+  env: {},
+};
+
+module.exports = withPlugins(plugins, nextConfig);
