@@ -6,6 +6,9 @@ const plugins = [
     basePath: '',
     assetPrefix: '',
     cssModules: false,
+    lessLoaderOptions: {
+      javascriptEnabled: true,
+    }
   }),
 ];
 

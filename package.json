@@ -10,10 +10,14 @@
   },
   "dependencies": {
     "@zeit/next-less": "^1.0.1",
+    "antd": "^4.7.3",
+    "gray-matter": "^4.0.2",
     "less": "^3.12.2",
+    "marked": "^1.2.2",
     "next": "9.5.5",
     "next-compose-plugins": "^2.2.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "react-h5-audio-player": "^3.4.1"
   }
 }
